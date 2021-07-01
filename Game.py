@@ -6,18 +6,17 @@ for each in file:
     if(each!='\n'):
         lst.append(each)
 print("Choose a word from the above words")
-print("You have 5 chances")
+print("You have 6 chances")
 f = 0
-for i in range(5,-1,-1):
+for i in range(6,-1,-1):
     r.shuffle(lst)
     ans = r.choice(lst)
-    guess = input("Guess !! => ")
+    guess = input("Guess !! => ").capitalize()
     if guess == ans :
         print("You Won !! ,your guess is correct ")
         f = 1
     else:
-        print("Wrong answer !\nThe answer is => {} ".format(ans))
+        print("Wrong answer !the answer is => {} ".format(ans))
         print(i," chances left !!")
 if f ==0:
     print("You lost the game !! ,Try again")
-
