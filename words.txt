@@ -20,4 +20,6 @@ Computer
 Google
 Music
 Movies
-Dance
+Svelte
+Html
+Css
